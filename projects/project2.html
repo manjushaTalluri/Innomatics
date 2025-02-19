@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+  
+    <div class="landing-page" id="landingPage">
+        <h1>Memory Match Game</h1>
+        <div class="category-buttons">
+            <button data-category="fruits">Fruits</button>
+            <button data-category="emojis">Emojis</button>
+            <button data-category="animals">Animals</button>
+            <button data-category="planets">Planets</button>
+            <button data-category="flags">Flags</button>
+            <button data-category="alphabets">Alphabets</button>
+        </div>
+    </div>
+
+
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <div class="game-header">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="timer">Time: <span id="timer">30</span>s</div>
+        </div>
+        
+        <div class="cards-grid" id="cardsGrid">
+           
+        </div>
+
+        <div class="game-controls">
+            <button id="restartBtn">Restart</button>
+            <button id="backBtn">Back to Categories</button>
+        </div>
+    </div>
+
+
+    <div class="modal" id="gameOverModal">
+        <div class="modal-content">
+            <h2 id="gameOverTitle">Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="playAgainBtn">Play Again</button>
+            <button id="homeBtn">Home</button>
+        </div>
+    </div>
+
+    <script src="project2.js"></script>
+</body>
+</html>
